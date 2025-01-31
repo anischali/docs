@@ -7,14 +7,13 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{xpatch}
-\PassOptionsToPackage{hidelinks}{hyperref}
+\PassOptionsToPackage{hidelinks, linkcolor=black}{hyperref}
 \usepackage{geometry}
 \geometry{
   hmargin=1cm,
   top=3mm,
   bottom=5mm
-}
-
+} 
 \xpatchcmd\cventry{,}{}{}{}
 \setlength{\parindent}{0pt}
 
@@ -27,10 +26,12 @@
 \includegraphics[scale=0.25]{img/adr.png} \textcolor{black}{780 rue de Belmont, G1V2W9 Québec, QC}\\
 \includegraphics[scale=0.2]{img/tel.png} \textcolor{black}{(+1) 581 997 9445}\\
 \includegraphics[scale=0.2]{img/mail.png} \textcolor{black}{\emaillink{anis.chali1@outlook.com}}\\
-\includegraphics[scale=0.008]{img/git.png} \href{www.github.com/anischali}{\textcolor{black}{anischali}}\\
-\includegraphics[scale=0.015]{img/in.png} \href{www.linkedin.com/in/anis-chali-42564614a}{\textcolor{black}{in/anis-chali-42564614a}}\\\textcolor{black}{Nationality: French}\\\textcolor{black}{30 years old}
+\includegraphics[scale=0.015]{img/in.png} \href{https://www.linkedin.com/in/anis-chali-42564614a}{anischali}\\
+\includegraphics[scale=0.008]{img/git.png} \href{https://www.github.com/anischali/}{anischali}\\
+\textcolor{black}{Nationality: French}\\
+\textcolor{black}{30 years old}
 }
-\photo[64pt][0.5pt]{img/ph.png}
+\photo[64pt][0.5pt]{img/ph2.jpeg}
 
 \begin{document}
 \maketitle
@@ -46,7 +47,7 @@
 \section{Computer skills \& Languages:}
 \subsection{Computer:}
 \cventry{\newline{}\includegraphics[height=18pt, width=20pt]{img/cpu.png}}{Embedded:}%
-{Yocto, Linux kernel, DeviceTree, FreeRTOS, Zephyr, MCUXpresso, HID Over I2C, HID Over USB, U-boot, STM32, Smart Batteries, SD Card, Audio, Atmel SAM \& AVR, buildroot, cross compile, RaspberryPi, BananaPi, Logic Analyzers.}{}{}{}
+{Yocto, Linux kernel, DeviceTree, FreeRTOS, Zephyr, MCUXpresso, HID Over I2C, HID Over USB, U-boot, STM32, Smart Batteries, SD Card, Audio, Atmel SAM \& AVR, buildroot, cross compile, RaspberryPi, BananaPi, Logic Analyzers, JLink segger.}{}{}{}
 \cventry{\newline{}\includegraphics[height=18pt, width=20pt]{img/prog.png}}{Programming Languages:}%
 {C/C++, Python, C\#, QT/Qml, Bash, PowerShell, Java, JS, SQL, CMake, Autotools, Makefile}{}{}{}
 \cventry{\newline{}\includegraphics[height=18pt, width=20pt]{img/tech.png}}{Technos:}%
